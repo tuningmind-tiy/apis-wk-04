@@ -1,8 +1,11 @@
 window.onload = function stuff() {
 
-  //const url = `http://007api.co/api/gadgets/`
+const url = `http://007api.co/api/gadgets/`
 
-  const url = `http://api.icndb.com/`
+const addElement = function (sometext) {
+  const gadgetname = $("<p></p>").text(sometext)
+  $("body").append(gadgetname)
+}
 
   $.ajax({
     url: url
@@ -14,10 +17,16 @@ window.onload = function stuff() {
       const gadgets = [];
 
       for (let i = 0; i < resultsLength; i++) {
-        gadgets.push(results[i].name)
+        gadgets.push(results[i])
       }
       console.log('the gadgets are:', gadgets)
-
+      
+      for (let i = 0; i < gadgets.length; i++) {
+        const p = document.createElement('p')
+        addElement(gadgets[i].name)
+        //("gadget description: ", gadgets[i].description)
+      }
     })
+
   }
 

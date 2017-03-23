@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+html, body {
+  
+}
+body {
+  background-image: url("../img/bond.jpg");
+  font-family: 'Inconsolata', monospace;
+  color: white;
+  background-size: cover;
+}
+/* button image from easydisplayname.deviantart.com */
