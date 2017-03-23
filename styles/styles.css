@@ -2,19 +2,24 @@
   box-sizing: border-box;
 }
 html, body {
-  
+  width: 100%; 
+  height: 100%;
 }
 body {
   background-image: url("../img/bond.jpg");
   font-family: 'Inconsolata', monospace;
   color: white;
   background-size: cover;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  height: 100%;
+  background-repeat: no-repeat;
 }
 p {
   margin: 1% 2%;
+}
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 button {
   background-image: url("../img/button.jpg");
@@ -27,4 +32,12 @@ button {
   min-width: 15%;
   opacity: 0.8;
 }
+#description {
+  font-family: 'Inconsolata', monospace;
+  color: white;
+  margin: 1% 2%;
+  font-size: 1em;
+}
+
+
 /* button image from easydisplayname.deviantart.com */
