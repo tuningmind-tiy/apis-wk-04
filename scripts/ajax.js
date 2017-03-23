@@ -2,8 +2,8 @@ window.onload = function stuff() {
 
 const url = `http://007api.co/api/gadgets/`
 
-const addElement = function (sometext) {
-  const gadgetname = $("<p></p>").text(sometext)
+const addButtons= function (sometext) {
+  const gadgetname = $("<button></button>").text(sometext)
   $("body").append(gadgetname)
 }
 
@@ -23,7 +23,7 @@ const addElement = function (sometext) {
       
       for (let i = 0; i < gadgets.length; i++) {
         const p = document.createElement('p')
-        addElement(gadgets[i].name)
+        addButtons(gadgets[i].name)
         //("gadget description: ", gadgets[i].description)
       }
     })
