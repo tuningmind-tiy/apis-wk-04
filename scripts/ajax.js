@@ -29,6 +29,7 @@ let addDescription = function (sometext) {
         const p = document.createElement('p')
         addButton(results[i].name)
         descriptions.push(results[i].description)
+    console.log("descriptions: ", descriptions)
       }
       
     })
