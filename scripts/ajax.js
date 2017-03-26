@@ -18,8 +18,7 @@ let handleClick = function (sometext) {
       const descriptions = [];
 
       for (let i = 0; i < resultsLength; i++) {
-        gadgets.push(results[i].name)
-        gadgetname = $("<button></button>").text(results[i].name)
+        let gadgetname = $("<button></button>").text(results[i].name)
         $("#buttons").append(gadgetname)
       }
       $('button').click( function () {
