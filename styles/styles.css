@@ -29,13 +29,16 @@ body {
 h3 {
   padding: 1% 13%;
 }
+.container {
+  position: absolute;
+}
 #descriptions {
-  background: fixed;
+  position: fixed;
   font-family: 'Inconsolata', monospace;
   color: white;
-  padding: 0 0 0 5% ;
+  padding: 10% 0 0 30% ;
   font-size: 1em;
-  width: 30%;
+  width: 50%;
 }
 button {
   font-family: 'Inconsolata', monospace;

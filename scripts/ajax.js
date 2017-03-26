@@ -16,17 +16,13 @@ const url = `http://007api.co/api/gadgets/`
         $("#buttons").append(gadgetname)
       }
       $('button').click( function (e) {
+        $('#descriptions').text('')
         // get classname from clicked button
         buttonname = $(this).attr("class")
         // get button number 
         index = Number(buttonname[6])
-        console.log("index: ", index)
         // get description from results for this button
         $('#descriptions').text(results[index].description)
-        // increase padding to match 
-        let padding = 80 * (index + 1)
-        // add padding-top to appropriate button
-        $('#descriptions').css('padding-top', (padding + 'px'))
       })
     })
 }
