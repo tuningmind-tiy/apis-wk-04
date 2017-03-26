@@ -17,6 +17,25 @@ body {
   height: 100%;
   background-repeat: no-repeat;
 }
+.container {
+  position: absolute;
+  min-height: 100%;
+}
+#martini {
+  position: fixed;
+  height: 40px;
+  width: auto;
+  transform: rotate(75deg);
+  bottom: 5%;
+  left: 32%;
+}
+#just_bond {
+  position: fixed;
+  height: 80px;
+  width: auto;
+  bottom: 2%;
+  left: 35%;
+}
 .float-left {
   float-left;
 }
@@ -28,9 +47,6 @@ body {
 }
 h3 {
   padding: 1% 13%;
-}
-.container {
-  position: absolute;
 }
 #descriptions {
   position: fixed;
@@ -64,6 +80,7 @@ button {
   font-size: 22px;
   text-decoration: none;
   vertical-align: middle;
+  z-index: 100;
   }
 button:hover {
   border-top-color: #3a4009;
