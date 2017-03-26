@@ -2,35 +2,36 @@ window.onload = function stuff() {
 
 const url = `http://007api.co/api/gadgets/`
 
-const addButtons = function (sometext) {
+const addButton = function (sometext) {
   const gadgetname = $("<button></button>").text(sometext)
   $("#buttons").append(gadgetname)
 }
-const addDescriptions = function (sometext) {
+let addDescription = function (sometext) {
   const description = $("<div></div>").text(sometext)
   $("#description").append(description)
 }
+// let handleClick = function () {
+//   button.textContent = gadgets[button.name].description
+// }
+// $('#buttons').on('click', 'button', handleClick);
 
   $.ajax({
     url: url
   }).done(function(data) {
       const results = data.results
+      console.log("results: ", results)
       const resultsLength = results.length;
       const gadgets = [];
+      const descriptions = [];
 
       for (let i = 0; i < resultsLength; i++) {
-        gadgets.push(results[i])
+        gadgets.push(results[i].name)
+        const p = document.createElement('p')
+        addButton(results[i].name)
+        descriptions.push(results[i].description)
       }
       
-      for (let i = 0; i < gadgets.length; i++) {
-        const p = document.createElement('p')
-        addButtons(gadgets[i].name)
-        addDescriptions(gadgets[i].description) 
-      }
-      // $("button").addEventListener("click", function () {
-      //   $("#description").text(gadgets[i].description)
-      // }
     })
 
-  }
+}
 
