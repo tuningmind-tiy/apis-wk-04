@@ -13,12 +13,11 @@ let handleClick = function (sometext) {
     url: url
   }).done(function(data) {
       const results = data.results
-      const resultsLength = results.length;
-      const gadgets = [];
-      const descriptions = [];
 
-      for (let i = 0; i < resultsLength; i++) {
+      for (let i = 0; i < results.length; i++) {
         let gadgetname = $("<button></button>").text(results[i].name)
+        let className = "button" + i
+        gadgetname.addClass(className)
         $("#buttons").append(gadgetname)
       }
       $('button').click( function () {
