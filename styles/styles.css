@@ -52,9 +52,11 @@ h3 {
   position: fixed;
   font-family: 'Inconsolata', monospace;
   color: white;
-  padding: 10% 0 0 30% ;
+  /*padding: 10% 0 0 30% ;*/
+  left: 28%;
+  top: 25%;
   font-size: 1em;
-  width: 50%;
+  width: 28%;
 }
 button {
   font-family: 'Inconsolata', monospace;
