@@ -10,6 +10,7 @@ html, body {
 }
 body {
   background-image: url("../img/bond.jpg");
+  background-attachment: fixed;
   font-family: 'Inconsolata', monospace;
   color: white;
   background-size: cover;
@@ -23,14 +24,16 @@ body {
   float: left; 
   width: 25%;
   height: auto;
+  margin-bottom: 30px;
 }
 h3 {
   padding: 1% 13%;
 }
 #descriptions {
+  background: fixed;
   font-family: 'Inconsolata', monospace;
   color: white;
-  padding: 5%;
+  padding: 5% ;
   font-size: 1em;
   height: auto;
   width: 30%;
