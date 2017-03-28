@@ -2,7 +2,7 @@ window.onload = function stuff() {
 
 let buttonname = ''
 let index = 0
-const url = `//007api.co/api/gadgets/`
+const url = 'http://007api.co/api/gadgets/'
 
   $.ajax({
     url: url
